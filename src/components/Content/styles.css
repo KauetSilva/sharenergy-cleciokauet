@@ -1,0 +1,14 @@
+.container {
+   height: (100vh- 18%);
+   max-width: 100vw;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 1rem;
+   color: #d5d5d6;
+   margin:  2% 5%;
+}
+
+body {
+   background-color: #19171d;
+}

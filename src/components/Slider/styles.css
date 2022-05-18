@@ -1,0 +1,152 @@
+.slider_window {
+   background-color: rgba(3, 3, 3, 0.8);
+   height: 100vh;
+   position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_arrow {
+    position: absolute;
+    top:50%;
+    left: 32px;
+    font-size: 3px;
+    color: #e1e1e1;
+    
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right_arrow {
+    position: absolute;
+    top:50%;
+    right: 32px;
+    font-size: 3px;
+    color: #e1e1e1;
+
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide_active {
+opacity: 1;
+transition-duration: 1s;
+transform: scale(1.08);
+}
+
+.card {
+    flex: 1;
+    max-width: 728px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #19171d;
+
+    border-radius: 3px;
+    padding: 18px;
+
+    position: relative;
+}
+
+.card .div_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    padding: 40px 10px;
+    
+}
+
+.div_info {
+    display: flex;
+}
+.div_left,.div_right{
+    width: 50%;
+
+}
+.div_info .div_left,.div_info .div_right {
+    padding: 10px;
+    background-color: #19171d;
+ 
+}
+
+.div_info .div_left img {
+    height: 80%;
+    width: 100%;
+}
+
+.div_info .div_right p {
+    max-height: 250px;
+    height: 75%;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.div_info .div_right p::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.div_info .div_right p::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.div_info .div_right .div_info_date {
+    height: 25%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    color:#4a4a4a;
+    
+}
+
+@media (max-width:728px) {
+   .card {
+        height: 35rem;
+       max-width: 50rem;
+       background-color: #19171d;
+
+   }
+   .left_arrow {
+    padding-left: 1rem;
+    top: 10rem;
+    left: 32px;
+    font-size: 3px;
+    color: #e1e1e1;
+    
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right_arrow {
+    padding-right: 1rem;
+    top:10rem;
+    right: 32px;
+    font-size: 3px;
+    color: #e1e1e1;
+
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+ }

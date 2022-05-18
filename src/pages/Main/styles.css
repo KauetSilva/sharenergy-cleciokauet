@@ -1,0 +1,18 @@
+* {
+   box-sizing: border-box;
+   margin: 0px;
+   font-family: 'Helvetica Neue', Helvetica,Lucida Grande,Arial;
+   
+ }
+ 
+ 
+ .app_window {
+   background-color: #19171d;
+   display: flex;
+   flex-direction: column;
+   
+   height: 100vh;
+   max-width: 100vw;
+   overflow-x: hidden;
+   
+ }

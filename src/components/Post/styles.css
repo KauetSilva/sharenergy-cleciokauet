@@ -1,0 +1,26 @@
+.article {
+   all: unset;
+   cursor: pointer;
+   border-radius: 5px;
+   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+   background-color: #272727;
+  
+   margin: 1em;
+   padding: 1em;
+   display: flex;
+   justify-content:space-between;
+}
+
+.article:hover {
+   opacity: 0.7;
+}
+
+.article span:first-of-type {
+   font-weight: 400;
+}
+
+
+.article span:last-of-type{
+   color: #858585;
+   
+}
